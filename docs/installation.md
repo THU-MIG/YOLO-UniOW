@@ -8,7 +8,7 @@ We provide the `requirements` files in [./requirements](./../requirements/):
 
 #### Install `MMCV`
 
-YOLO-World adopts `mmcv>=2.0.0`. There are several ways to install `mmcv`
+YOLO-UniOW adopts `mmcv>=2.0.0`. There are several ways to install `mmcv`
 
 **1. using `openmim`**:
 

@@ -56,18 +56,18 @@ The data structure of `data/OWOD` is like
 
 ```bash
 ├── OWOD/
-|   ├── JPEGImages/
-|   |   ├── SOWODB/
-|   |   ├── MOWODB/
-|   |   └── nuOWODB/
-|   ├── Annotations/
-|   |   ├── SOWODB/
-|   |   ├── MOWODB/
-|   |   └── nuOWODB/
-|   └── ImageSets/
-|   |   ├── SOWODB/
-|   |   ├── MOWODB/
-|   |   └── nuOWODB/
+│   ├── JPEGImages/
+│   │   ├── SOWODB/
+│   │   ├── MOWODB/
+│   │   └── nuOWODB/
+│   ├── Annotations/
+│   │   ├── SOWODB/
+│   │   ├── MOWODB/
+│   │   └── nuOWODB/
+│   ├── ImageSets/
+│   │   ├── SOWODB/
+│   │   ├── MOWODB/
+│   │   └── nuOWODB/
 ```
 
 The splits and known texts prompt are present inside the `data/OWOD/ImageSets/MOWODB`, `data/OWOD/ImageSets/SOWODB` and `data/OWOD/ImageSets/nuOWODB` folders
@@ -77,6 +77,7 @@ The splits and known texts prompt are present inside the `data/OWOD/ImageSets/MO
   Untar the trainval 2007 and 2012 and test 2007 folders. Move all the images to `JPEGImages` folder and annotations to `Annotations` folder.
 - Download [nuImages](https://www.nuscenes.org/nuimages) for nuOWODB. Use the code `tools/dataset_converters/nuimages_to_voc.py` for converting both train/val annotations to xml files. 
   And move the related images and annotations to `JPEGImages` and `Annotations` folder. Make sure the filenames are matched with names in `ImageSets`.
-> For M-OWODB/S-OWODB, we created just one folder of all the JPEG images and Annotations, for `SOWODB` and a symbolic link for `MOWODB`. We follow the VOC format for data loading and evaluation.
+
+**Note:** For M-OWODB/S-OWODB, we created just one folder of all the JPEG images and Annotations, for `SOWODB` and a symbolic link for `MOWODB`. We follow the VOC format for data loading and evaluation.
 
 
