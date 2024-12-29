@@ -1,0 +1,23 @@
+bicycle
+motorcycle
+car
+articulated bus
+rigid bus
+truck
+ambulance
+police car
+construction vehicle
+trailer
+adult
+child
+wheelchair
+stroller
+scooter
+police officer
+construction worker
+barrier
+traffic cone
+pushable and pullable object
+debris
+bicycle rack
+animal

@@ -1,0 +1,17 @@
+bicycle
+motorcycle
+car
+articulated bus
+rigid bus
+truck
+ambulance
+police car
+construction vehicle
+trailer
+adult
+child
+wheelchair
+stroller
+scooter
+police officer
+construction worker

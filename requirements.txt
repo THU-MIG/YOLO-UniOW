@@ -1,0 +1,11 @@
+numpy==1.26.3
+mmdet==3.3.0
+mmengine==0.10.3
+opencv-python==4.9.0.80
+opencv-python-headless==4.9.0.80
+albumentations==1.4.4
+transformers==4.41.2
+peft==0.11.1
+pycocotools==2.0.7
+lvis @ git+https://github.com/lvis-dataset/lvis-api.git
+-e third_party/mmyolo
