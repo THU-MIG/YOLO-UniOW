@@ -27,16 +27,15 @@ We put all data into the `data` directory, such as:
 ```
 **NOTE**: We strongly suggest that you check the directories or paths in the dataset part of the config file, especially for the values `ann_file`, `data_root`, and `data_prefix`.
 
-### Open Vocabulary Dataset (Same as [YOLO-World](https://github.com/AILab-CVC/YOLO-World/blob/master/docs/data.md))
+### Open Vocabulary Dataset
 
-For pre-training YOLO-World, we adopt several datasets as listed in the below table:
+For pre-training YOLO-UniOW, we adopt several datasets as listed in the below table:
 
 | Data | Samples | Type | Boxes  |
 | :-- | :-----: | :---:| :---: | 
 | Objects365v1 | 609k | detection | 9,621k |
 | GQA | 621k | grounding | 3,681k |
 | Flickr | 149k | grounding | 641k |
-| CC3M-Lite | 245k | image-text | 821k |
 
 We provide the annotations of the pre-training data in the below table:
 
@@ -47,7 +46,7 @@ We provide the annotations of the pre-training data in the below table:
 | Flickr30k | [`Flickr30k`](https://shannon.cs.illinois.edu/DenotationGraph/) |[`final_flickr_separateGT_train.json`](https://huggingface.co/GLIPModel/GLIP/tree/main/mdetr_annotations/final_flickr_separateGT_train.json) |
 | LVIS-minival | [`COCO val2017`](https://cocodataset.org/) | [`lvis_v1_minival_inserted_image_name.json`](https://huggingface.co/GLIPModel/GLIP/blob/main/lvis_v1_minival_inserted_image_name.json) |
 
-**Acknowledgement:** We sincerely thank [GLIP](https://github.com/microsoft/GLIP) and [mdetr](https://github.com/ashkamath/mdetr) for providing the annotation files for pre-training.
+**Acknowledgement:** The pre-training data preparation process is based on [YOLO-World](https://github.com/AILab-CVC/YOLO-World/blob/master/docs/data.md).
 
 
 ### Open-World Dataset
