@@ -1,6 +1,6 @@
 # YOLO-UniOW: Efficient Universal Open-World Object Detection
 
-The official implementation of **YOLO-UniOW** [[`arxiv`]()]
+The official implementation of **YOLO-UniOW** [[`arxiv`]() comming soon]
 
 ![yolo-uniow](./assets/yolo-uniow.jpg)
 
@@ -9,7 +9,7 @@ The official implementation of **YOLO-UniOW** [[`arxiv`]()]
 
 YOLO-UniOW-S/M/L has been pre-trained from scratch and evaluated on the `LVIS minival`. The pre-trained weights can be downloaded from the link provided below.
 
-|                            Model                             | #Params | $\mathrm{AP^{mini}}$ | $\mathrm{AP_r}$ | $\mathrm{AP_c}$ | $\mathrm{AP_f}$ | FPS (V100) |
+|                            Model                             | #Params | AP<sup>mini</su> | AP<sub>r</sub> | AP<sub>c</sub> | AP<sub>f</sub> | FPS (V100) |
 | :----------------------------------------------------------: | :-----: | :------------------: | :-------------: | :-------------: | :-------------: | :--------: |
 | [YOLO-UniOW-S](https://huggingface.co/leonnil/yolo-uniow/resolve/main/yolo_uniow_s_lora_bn_5e-4_100e_8gpus_obj365v1_goldg_train_lvis_minival.pth) |  7.5M   |         26.2         |      24.1       |      24.9       |      27.7       |    98.3    |
 | [YOLO-UniOW-M](https://huggingface.co/leonnil/yolo-uniow/resolve/main/yolo_uniow_m_lora_bn_5e-4_100e_8gpus_obj365v1_goldg_train_lvis_minival.pth) |  16.2M  |         31.8         |      26.0       |      30.5       |       34        |    86.2    |
