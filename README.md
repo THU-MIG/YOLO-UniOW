@@ -1,6 +1,6 @@
 # YOLO-UniOW: Efficient Universal Open-World Object Detection
 
-The official implementation of **YOLO-UniOW** [[`arxiv`]() comming soon]
+The official implementation of **YOLO-UniOW** [[`arxiv`](https://arxiv.org/abs/2412.20645)]
 
 ![yolo-uniow](./assets/yolo-uniow.jpg)
 
