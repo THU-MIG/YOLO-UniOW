@@ -81,3 +81,23 @@ DATASET=$DATASET TASK=$TASK THRESHOLD=$THRESHOLD SAVE=$SAVE \
 ## Acknowledgement
 
 This project builds upon [YOLO-World](https://github.com/AILab-CVC/YOLO-World), [YOLOv10](https://github.com/Trami1995/YOLOv10), [FOMO](https://github.com/orrzohar/FOMO), and [OVOW](https://github.com/343gltysprk/ovow/). We sincerely thank the authors for their excellent implementations!
+
+## Citation
+
+If our code or models help your work, please cite our paper and yolov10:
+```bash
+@article{liu2024yolouniow,
+  title={YOLO-UniOW: Efficient Universal Open-World Object Detection},
+  author={Lihao Liu and Juexiao Feng and Hui Chen and Ao Wang and Lin Song and Jungong Han and Guiguang Ding},
+  journal={arXiv preprint arXiv:2412.20645},
+  year={2024}
+}
+
+@article{wang2024yolov10,
+  title={YOLOv10: Real-Time End-to-End Object Detection},
+  author={Wang, Ao and Chen, Hui and Liu, Lihao and Chen, Kai and Lin, Zijia and Han, Jungong and Ding, Guiguang},
+  journal={arXiv preprint arXiv:2405.14458},
+  year={2024}
+}
+```
+
