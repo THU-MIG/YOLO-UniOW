@@ -800,10 +800,10 @@ class YOLOv10Head(BaseDenseHead):
         ]
     
         if self.infer_type == "one2one":
-            outs = x_one2many
+            outs = x_one2one
             with_nms = self.test_cfg.get("one2one_withnms", False)
         elif self.infer_type == "one2many":
-            outs = x_one2one
+            outs = x_one2many
             with_nms = self.test_cfg.get("one2many_withnms", False)
         else:
             raise Exception("unsupported infer type")
