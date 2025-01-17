@@ -88,7 +88,7 @@ If our code or models help your work, please cite our paper and yolov10:
 ```bash
 @article{liu2024yolouniow,
   title={YOLO-UniOW: Efficient Universal Open-World Object Detection},
-  author={Lihao Liu and Juexiao Feng and Hui Chen and Ao Wang and Lin Song and Jungong Han and Guiguang Ding},
+  author={Liu, Lihao and Feng, Juexiao and Chen, Hui and Wang, Ao and Song, Lin and Han, Jungong and Ding, Guiguang},
   journal={arXiv preprint arXiv:2412.20645},
   year={2024}
 }
