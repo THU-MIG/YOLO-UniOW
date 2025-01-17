@@ -18,6 +18,7 @@ def parse_args():
     return parser.parse_args()
 
 
+@torch.inference_mode()
 def extract_feats(model, dataset=None, task=None, save_path='embeddings'):
     prompt = []
     prompt_path = f'data/OWOD/ImageSets/{dataset}/t{task}_known.txt'
@@ -31,6 +32,7 @@ def extract_feats(model, dataset=None, task=None, save_path='embeddings'):
     np.save(save_path, text_feats.numpy())
 
 
+@torch.inference_mode()
 def extract_tuned_feats(config=None, ckpt=None, wildcard='object', save_path="embeddings"):
     # extract tuned wildcard embeddings from text encoder
     model_path = sorted(glob.glob(f'work_dirs/{Path(config).stem}/best*.pth'))[-1] if ckpt is None else ckpt
@@ -39,6 +41,7 @@ def extract_tuned_feats(config=None, ckpt=None, wildcard='object', save_path="em
     np.save(save_path / f'{wildcard.replace(" ", "_")}_tuned.npy', tuned_feats.numpy())
 
 
+@torch.inference_mode()
 def extract_wildcard_feats(model, wildcard='object', save_path='embeddings'):
     # extract wildcard embeddings from text encoder
     save_path = save_path / f'{wildcard.replace(" ", "_")}.npy'
@@ -63,6 +66,7 @@ if __name__ == "__main__":
         runner.call_hook("before_run")
         runner.load_checkpoint(args.ckpt, map_location='cpu')
         model = runner.model.to('cuda')
+        model.eval()
 
         # extract features
         extract_wildcard_feats(model, wildcard=args.wildcard, save_path=save_path)

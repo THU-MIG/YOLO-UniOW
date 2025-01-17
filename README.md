@@ -47,7 +47,7 @@ For open-vocabulary model training and evaluation, please refer to `run_ovod.sh`
     pretrained/yolo_uniow_s_lora_bn_5e-4_100e_8gpus_obj365v1_goldg_train_lvis_minival.pth 8
 ```
 
-For open-world model training and evaluation, please follow the steps provided in `run_owod.sh`. Ensure that the model is trained before proceeding with the evaluation.
+For open-world model training and evaluation, please follow the steps provided in `run_owod.sh`. Ensure that the model is trained before proceeding with the evaluation. We provide our fine-tuned wildcard features, [object_tuned_s](https://huggingface.co/leonnil/yolo-uniow/resolve/main/object_tuned_s.npy) and [object_tuned_m](https://huggingface.co/leonnil/yolo-uniow/resolve/main/object_tuned_m.npy), obtained through steps 2 and 3, allowing for direct use.
 
 ```bash
 # 1. Extract text/wildcard features from pretrained model
